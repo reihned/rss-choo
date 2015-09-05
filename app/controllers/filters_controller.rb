@@ -10,6 +10,13 @@ class FiltersController < ApplicationController
   # GET /filters/1
   # GET /filters/1.json
   def show
+    set_filter
+
+    respond_to do |format|
+      format.html
+      format.rss { render :xml => @filter.filter_title_hash["rss"].to_xml(:root => :rss, :skip_types => true) }
+
+    end
   end
 
   # GET /filters/new
