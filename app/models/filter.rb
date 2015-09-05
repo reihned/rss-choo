@@ -1,6 +1,5 @@
 class Filter < ActiveRecord::Base
-
-  def filter_title_xml
+   def filter_title_xml
     self.filter_title_hash.to_xml
   end
 
@@ -35,5 +34,4 @@ class Filter < ActiveRecord::Base
   def getfeed_hash
     return Hash.from_xml(self.get_feed)
   end
-
 end

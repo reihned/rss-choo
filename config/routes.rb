@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :filters
   root 'filters#index'
 
   resources :filters

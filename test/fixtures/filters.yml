@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  feed_url: MyString
+  keywords: MyText
+
+two:
+  feed_url: MyString
+  keywords: MyText
